@@ -1,0 +1,51 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+  info [
+    "The model of the e-puck 2 robot"
+  ]
+  title "e-puck simulation"
+}
+Viewpoint {
+  orientation 0.5669382332720035 0.5398728864906563 -0.622188320435755 1.9830491631924598
+  position -0.02682808792658329 0.11246400432315178 0.7889219407565883
+  follow "e-puck2"
+  followType "None"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 1 0 0
+  floorSize 0.4 0.4
+}
+WoodenBox {
+  translation 0.004736 -0.120927 0.05
+  size 0.1 0.15 0.15
+}
+E-puck {
+  hidden position_0_0 6400.076512214674
+  hidden position_0_1 6701.075121070731
+  hidden linearVelocity_0 -0.08444147962891352 -0.0922978245803012 0.00035352256516208574
+  hidden angularVelocity_0 -0.004354315112782919 0.002908357490644285 -0.02532550236302405
+  hidden rotation_1 0 1 0 3.7938695058550063
+  hidden linearVelocity_1 -0.08471714696437893 -0.09231213505711447 -0.00016172667711009635
+  hidden angularVelocity_1 4.6168241182745335 -4.234715224858809 -0.008810047082409157
+  hidden rotation_2 0 1 0 3.199583617292072
+  hidden linearVelocity_2 -0.08414805584255425 -0.09225185797143223 -0.0001788528700825789
+  hidden angularVelocity_2 4.611517678908105 -4.240517873782822 -0.01508874205669108
+  translation -0.1056678903125057 0.1150785175479409 -8.805902936441339e-05
+  rotation -0.00013417475239979487 -0.0006743366791880873 -0.9999997636335616 2.313171350740798
+  name "e-puck2"
+  controller "obs_avoidance"
+  version "2"
+  camera_width 160
+  camera_height 120
+}
